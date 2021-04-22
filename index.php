@@ -9,6 +9,8 @@
 <body>
     <?php 
       $string = "devi andare a fnclo";
+      
+      
       $Badword = str_replace("fnclo", "******", $string);
 
       echo $string;
@@ -16,5 +18,8 @@
       echo $Badword;
 
     ?>
+    <h1>la prima stringa è lunga: <?php echo strlen($string);?> caratteri</h1>
+    <h1>la seconda stringa è lunga: <?php echo strlen($Badword);?> caratteri</h1>
+
 </body>
 </html>
