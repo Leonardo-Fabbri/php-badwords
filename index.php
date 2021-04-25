@@ -7,19 +7,28 @@
     <title>Php!!</title>
 </head>
 <body>
-    <?php 
-      $string = "devi andare a fnclo";
-      
-      
-      $Badword = str_replace("fnclo", "******", $string);
+<?php
+ $text= "bruttissimi insulti, veramente tanti bruttisimi insulti";
+?> 
+  <h1>IL PARAGRAFO E' L'UNGO: <?php echo strlen($text); ?> caratteri</h1>
+  <p><?php echo $text; ?></p>
 
-      echo $string;
-      echo " ";
-      echo $Badword;
+<?php
+$parolaccia = $_GET["parolaccia"];
+$text= str_replace($parolaccia, "***", $text);
+?>
+  <h1>IL PARAGRAFO E' L'UNGO: <?php echo strlen($text); ?> caratteri</h1>
+  <p><?php echo $text; ?></p>
 
-    ?>
-    <h1>la prima stringa è lunga: <?php echo strlen($string);?> caratteri</h1>
-    <h1>la seconda stringa è lunga: <?php echo strlen($Badword);?> caratteri</h1>
+
+
+
+
+  
+
+  
+   
+     
 
 </body>
 </html>
